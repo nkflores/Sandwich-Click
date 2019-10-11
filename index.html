@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <h1>Click to eat sandwich</h1>
+    <h3 id="pbj">Peanut Butter Jelly</h3>
+    <h3 id="grilledcheese">Grilled Cheese</h3>
+    <h3 id="roastbeef">Roast Beef</h3>
+
+    <script type="text/javascript">
+    
+        $(document).ready(function() {
+            
+            //--VARIABLES--//
+            var pbjCounter = 0;
+            var grilledCheeseCounter = 0;
+            var roastBeefCounter = 0;
+
+            //--FUNCTIONS--//
+            $("#pbj").on("click", function() {
+                alert("Mmmm...masarap itong PB&J");
+                pbjCounter++;
+                alert("You ate " + pbjCounter + " PB&J sandwiches");
+            });
+
+            $("#grilledcheese").on("click", function() {
+                alert("Yummy Gooey & Cheesy goodness!");
+                grilledCheeseCounter++;
+                alert("You ate " + grilledCheeseCounter + " grilled cheese sandwich!");
+            });
+
+            $("#roastbeef").on("click", function() {
+                alert("Moooo! sandwich");
+                roastBeefCounter++;
+                alert("You ate " + roastBeefCounter + " roastbeef sandwiches!");
+            });
+
+
+        })
+    
+    </script>
+
+</body>
+</html>
